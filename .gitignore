@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*.tmp
+*.zip
+.DS_Store
+.pytest_cache/
+records/state.json
+records/state.backup.json

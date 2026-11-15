@@ -1,0 +1,92 @@
+[
+  {
+    "id": "q-single", "kind": "question-type", "handles": "single",
+    "label": "单项选择", "entry": "plugins/q-single/client.js", "navLabel": "",
+    "requires": [], "defaultOn": true,
+    "summary": "四选一，点击后立即判定并显示解析"
+  },
+  {
+    "id": "q-judge", "kind": "question-type", "handles": "judge",
+    "label": "判断", "entry": "plugins/q-judge/client.js", "navLabel": "",
+    "requires": [], "defaultOn": true,
+    "summary": "固定「正确 / 错误」两个选项，点击后立即判定"
+  },
+  {
+    "id": "q-multi", "kind": "question-type", "handles": "multi",
+    "label": "多项选择", "entry": "plugins/q-multi/client.js", "navLabel": "",
+    "requires": [], "defaultOn": true,
+    "summary": "选完后点提交判定，需完全命中正确答案"
+  },
+  {
+    "id": "q-brief", "kind": "question-type", "handles": "brief",
+    "label": "简述", "entry": "plugins/q-brief/client.js", "navLabel": "",
+    "requires": [], "defaultOn": true,
+    "summary": "文本作答，不自动判分；输入实时落盘，提供参考要点与自评"
+  },
+  {
+    "id": "q-code", "kind": "question-type", "handles": "code",
+    "label": "编程实操", "entry": "plugins/q-code/client.js", "navLabel": "",
+    "requires": [], "defaultOn": false,
+    "summary": "Pyodide 浏览器内执行 Python，按 stdout 判题；需 site.json.pyodide 配置"
+  },
+  {
+    "id": "page-index", "kind": "page", "handles": "",
+    "label": "今日任务", "entry": "plugins/page-index/client.js", "navLabel": "今日",
+    "requires": [], "defaultOn": true,
+    "summary": "今日讲次、统计卡片、每日时间安排与打卡入口"
+  },
+  {
+    "id": "page-catalog", "kind": "page", "handles": "",
+    "label": "课程目录", "entry": "plugins/page-catalog/client.js", "navLabel": "课程目录",
+    "requires": [], "defaultOn": true,
+    "summary": "全部讲次目录、中英标题与完成状态"
+  },
+  {
+    "id": "page-lesson", "kind": "page", "handles": "",
+    "label": "每日学习", "entry": "plugins/page-lesson/client.js", "navLabel": "学习",
+    "requires": [], "defaultOn": true,
+    "summary": "要点卡片与当日全部题目，按启用的题型插件渲染"
+  },
+  {
+    "id": "page-review", "kind": "page", "handles": "",
+    "label": "错题册", "entry": "plugins/page-review/client.js", "navLabel": "错题册",
+    "requires": [], "defaultOn": true,
+    "summary": "未掌握错题、重做入口与掌握状态，过滤已作废题"
+  },
+  {
+    "id": "page-progress", "kind": "page", "handles": "",
+    "label": "学习进度", "entry": "plugins/page-progress/client.js", "navLabel": "学习进度",
+    "requires": [], "defaultOn": true,
+    "summary": "完成讲次、正确率、作答次数与分讲进度条"
+  },
+  {
+    "id": "page-notes", "kind": "page", "handles": "",
+    "label": "简述与笔记", "entry": "plugins/page-notes/client.js", "navLabel": "笔记",
+    "requires": [], "defaultOn": true,
+    "summary": "简述答案汇总、笔记编辑与导师回信展示"
+  },
+  {
+    "id": "page-about", "kind": "page", "handles": "",
+    "label": "课程说明", "entry": "plugins/page-about/client.js", "navLabel": "课程说明",
+    "requires": [], "defaultOn": true,
+    "summary": "课程来源、核实日期、译名订正、编排说明与版权声明"
+  },
+  {
+    "id": "page-playground", "kind": "page", "handles": "",
+    "label": "编程实验室", "entry": "plugins/page-playground/client.js", "navLabel": "编程实验室",
+    "requires": ["q-code"], "defaultOn": false,
+    "summary": "独立的浏览器内 Python 运行页，与 q-code 配套启用"
+  },
+  {
+    "id": "feature-mentor", "kind": "feature", "handles": "",
+    "label": "导师桥", "entry": "plugins/feature-mentor/client.js", "navLabel": "",
+    "requires": [], "defaultOn": true,
+    "summary": "维护 HANDOFF / teaching-log / drafts / mentor-replies 的读写约定"
+  },
+  {
+    "id": "feature-scope-lock", "kind": "feature", "handles": "",
+    "label": "超纲锁", "entry": "plugins/feature-scope-lock/client.js", "navLabel": "",
+    "requires": [], "defaultOn": true,
+    "summary": "按 concept 首次出现日过滤题目，避免提前出现未学概念"
+  }
+]

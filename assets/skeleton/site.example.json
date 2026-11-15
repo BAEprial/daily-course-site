@@ -1,0 +1,30 @@
+{
+  "name": "示例课程 · 每日学习站",
+  "shortName": "demo",
+  "port": 8767,
+  "theme": "warm",
+  "dailyMinutes": 15,
+  "plugins": [
+    "q-single", "q-judge", "q-multi", "q-brief",
+    "page-index", "page-catalog", "page-lesson", "page-review",
+    "page-progress", "page-notes", "page-about",
+    "feature-mentor", "feature-scope-lock"
+  ],
+  "quota": {
+    "single": 2,
+    "judge": 1,
+    "multi": 1,
+    "brief": 1
+  },
+  "plan": [
+    { "phase": "要点阅读", "minutes": 3 },
+    { "phase": "客观题练习", "minutes": 6 },
+    { "phase": "简述与复盘", "minutes": 6 }
+  ],
+  "source": {
+    "name": "演示用示例课程（非真实课程）",
+    "url": "",
+    "verifiedAt": "2026-11-15",
+    "copyright": "本文件为骨架演示数据，可替换为真实课程信息。"
+  }
+}
